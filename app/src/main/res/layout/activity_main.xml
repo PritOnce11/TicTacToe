@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="410dp"
+        android:layout_height="412dp"
+        android:alignmentMode="alignMargins"
+        android:background="@color/white"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:onClick="setFicha"
+            android:textColorLink="@android:color/transparent"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="setFicha"
+            android:textColorLink="#FFFFFF"
+            android:textSize="60sp"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="setFicha"
+            android:textColorLink="#FFFFFF"
+            android:textSize="60sp"/>
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="setFicha"
+            android:textColorLink="#FFFFFF"
+            android:textSize="60sp"/>
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="setFicha"
+            android:textColorLink="#FFFFFF"
+            android:textSize="60sp"/>
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColorLink="#FFFFFF"
+            android:onClick="setFicha"
+            android:textSize="60sp"/>
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColorLink="#FFFFFF"
+            android:onClick="setFicha"
+            android:textSize="60sp"/>
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:textColorLink="#FFFFFF"
+            android:layout_columnWeight="1"
+            android:onClick="setFicha"
+            android:textSize="60sp"/>
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:textColorLink="#FFFFFF"
+            android:onClick="setFicha"
+            android:layout_columnWeight="1"
+            android:textSize="60sp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/bEmpezar"
+        android:layout_width="93dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#D8D2D2"
+        android:text="Start"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/bReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D8D2D2"
+        android:text="Restart"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bEmpezar"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="328dp"
+        android:layout_height="110dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#16811B"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bEmpezar"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <RadioButton
+            android:id="@+id/radioButtonEasy"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:text="Fácil" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHard"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:text="Difícil" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
